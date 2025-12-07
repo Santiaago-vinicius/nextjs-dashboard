@@ -2,9 +2,11 @@ import AcmeLogo from '@/app/ui/acme-logo';
 import { ArrowRightIcon } from '@heroicons/react/24/outline';
 import Link from 'next/link';
 import { lusitana } from '@/app/ui/fonts'; // 1. Importando a fonte
-import Image from 'next/image'; // 2. Importando o componente de imagem
+import Image from 'next/image';
+import { fetchLatestInvoices, fetchCardData } from '@/app/lib/data'; // 2. Importando o componente de imagem
 
 export default function Page() {
+  
   return (
     <main className="flex min-h-screen flex-col p-6">
       <div className="flex h-20 shrink-0 items-end rounded-lg bg-blue-500 p-4 md:h-52">
